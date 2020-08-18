@@ -7,13 +7,13 @@ type User struct {
 	ID        int
 	FirstName string
 	LastName  string
-	email     string
+	Email     string
 	IsActive  bool
 }
 
 // Using Method For User
 func (user User) display() string {
-	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.email)
+	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.Email)
 	return result
 }
 
@@ -45,7 +45,7 @@ func main() {
 		ID:        1,
 		FirstName: "Rudolf",
 		LastName:  "Darwin",
-		email:     "rudolf@darwin.com",
+		Email:     "rudolf@darwin.com",
 		IsActive:  true,
 	}
 	result := user.display()
@@ -57,7 +57,7 @@ func main() {
 	user2.ID = 2
 	user2.FirstName = "Emilia"
 	user2.LastName = "Parker"
-	user2.email = "emilia@parker.com"
+	user2.Email = "emilia@parker.com"
 	user2.IsActive = true
 
 	// How to Output Struct With Method
@@ -99,6 +99,6 @@ func displayGroup(group Group) {
 
 // Function For Struct User
 func displayUser(user User) string {
-	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.email)
+	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.Email)
 	return result
 }
